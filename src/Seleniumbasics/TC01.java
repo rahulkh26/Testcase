@@ -20,11 +20,11 @@ public class TC01 {
         signIn.click();
 
         WebElement Username = driver.findElement(By.xpath("//input[@name='email']"));
-        Username.sendKeys("rahulbhavsarkh@gmail.com");
+        Username.sendKeys("abc");
         driver.findElement(By.xpath("//span[@id='continue']")).click();
 
         WebElement Password = driver.findElement(By.xpath("//input[@class='a-input-text a-span12 auth-autofocus auth-required-field']"));
-        Password.sendKeys("Asd@123");
+        Password.sendKeys("123");
 
 
         driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
@@ -42,7 +42,7 @@ public class TC01 {
         driver.findElement(By.xpath("//input[@data-testid='Address_selectShipToThisAddress']")).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.findElement(By.xpath("//input[@value='instrumentId=amzn1.pm.poa.YW16bjEucG9hOmFtem4xLnBvYS5wb2RhLlVuaWZpZWRQYXltZW50c0ludGVyZmFjZTox.QTIyOUlWUDJSM1dPNEc&isExpired=false&paymentMethod=UnifiedPaymentsInterface&tfxEligible=false']")).click();
-        driver.findElement(By.xpath("//input[@class='a-input-text a-form-normal no-prefetch-on-change']")).sendKeys("7899692027@ybl");
+        driver.findElement(By.xpath("//input[@class='a-input-text a-form-normal no-prefetch-on-change']")).sendKeys("use ypur payment method");
         driver.findElement(By.xpath("//span[@class='a-button a-button-primary validateVpaButtonSelector']")).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
